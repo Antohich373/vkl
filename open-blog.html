@@ -1,0 +1,384 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+	<title>startHtml by Vyatka-it</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/app.min.css">
+</head>
+<body>
+
+	<header class="header">	
+		<div class="header__wrap wrap">
+			<div class="header__logo-container">
+				<a href="index.html">
+					<picture>
+						<source srcset="assets/images/header/logo-desctop.svg" media="(min-width: 768px)"  >
+						<img class="header__logo" src="assets/images/header/logo-mobile.svg" alt="My image" width="47" height="47">
+					</picture>   
+					<div class="header__logo-contenst">
+						<p class="header__logo-title">Всё ВКЛючено</p>
+						<p class="header__logo-text">Электромонтажные <br> работы в Кирове</p>
+					</div>					
+				</a>
+			</div>
+			<div class="header__content">
+				<ul class="header__list-navigation">
+					<li class="header__item-navigation">
+						<a class="header__item-service" href="service.html">Услуги</a>
+						<div class="header__service">
+							<ul class="header__list-services"> 
+								<li class="navigation__item-service"><a href="open-service.html">Электромонтаж в квартирах</a></li>
+								<li class="navigation__item-service"><a href="page-service.html">Электромонтаж в частных домах</a></li>
+								<li class="navigation__item-service"><a href="open-service.html">Сборка электрощитов</a></li>
+								<li class="navigation__item-service"><a href="open-service.html">Скрытая проводка в деревянных домах</a></li>
+								<li class="navigation__item-service"><a href="open-service.html">Скрытая проводка в деревянных домах</a></li>
+								<li class="navigation__item-service"><a href="open-service.html">Скрытая проводка в деревянных домах</a></li>
+								<li class="navigation__item-service"><a href="open-service.html">Электромонтаж производственных объектов</a></li>
+								<li class="navigation__item-service"><a href="open-service.html">Монтаж системы “Умный дом”</a></li>
+								<li class="navigation__item-service"><a href="open-service.html">Монтаж систем ИБП</a></li>
+								<li class="navigation__item-service"><a href="open-service.html">Монтаж систем ИБП</a></li>
+							</ul>	
+						</div>
+					</li>
+					<li class="header__item-navigation"><a href="price.html">Цены</a></li>
+					<li class="header__item-navigation"><a href="our-works.html">Наши работы</a></li>
+					<li class="header__item-navigation"><a href="contact.html">Контакты</a></li>
+					<li class="header__item-navigation">
+						<a class="header__item-service" href="#">Ещё</a>
+						<div class="header__service">
+							<ul class="header__list-services"> 
+								<li class="navigation__item-service"><a href="reviews.html">Отзывы</a></li>
+								<li class="navigation__item-service"><a href="blog.html">Блог</a></li>
+							</ul>	
+						</div>
+					</li>
+				</ul>
+				<ul class="header__list-social">
+					<li class="header__item-social"><a class="whatsapp" href=""></a></li>
+					<li class="header__item-social"><a class="viber" href=""></a></li>
+					<li class="header__item-social"><a class="vk" href=""></a></li>
+					<li class="header__item-social"><a class="telegram" href=""></a></li>
+					<li class="header__item-social"><a class="insagram" href=""></a></li>
+				</ul>
+				<div class="header__contact">
+					<a class="header__contact-tel" href="tel:+79630002230">+7 (963) 000-22-30</a>
+					<button class="header__button-call" data-modal="callback" type="button">Заказать звонок</button>
+				</div>
+			</div>
+			<a class="header__tel-mobile" href="tel:"></a>
+			<button class="header__button-nav" type="button"></button>
+			<div class="header__nav-mobile">
+				<h2 class="header__nav-title">Меню</h2>
+				<ul class="header__list-mobile">
+					<li class="header__item-mobile header__item-mobile-servise">
+						<div class="header__item-mobile-box">
+							<a href="service.html">Услуги</a><span class="open-nav"></span>
+						</div>
+							<ul class="header__nav-list">
+								<li class="header__nav-item"><a href="open-service.html">Электромонтаж в квартирах</a></li>
+								<li class="header__nav-item"><a href="page-service.html">Электромонтаж в квартирах</a></li>
+								<li class="header__nav-item"><a href="open-service.html">Электромонтаж в квартирах</a></li>
+								<li class="header__nav-item"><a href="page-service.html">Электромонтаж в квартирах</a></li>
+								<li class="header__nav-item"><a href="open-service.html">Электромонтаж в квартирах</a></li>
+							</ul>
+					</li>
+					<li class="header__item-mobile"><a href="price.html">Цены</a></li>
+					<li class="header__item-mobile"><a href="our-works.html">Наши работы</a></li>
+					<li class="header__item-mobile"><a href="contact.html">Контакты</a></li>
+					<li class="header__item-mobile"><a href="blog.html">Блог команды</a></li>
+					<li class="header__item-mobile"><a href="reviews.html">Отзывы</a></li>
+				</ul>
+				<ul class="header__list-social-mobile">
+					<li class="header__item-social-mobile"><a class="whatsapp" href="#"></a></li>
+					<li class="header__item-social-mobile"><a class="viber" href="#"></a></li>
+					<li class="header__item-social-mobile"><a class="vk" href="#"></a></li>
+					<li class="header__item-social-mobile"><a class="telegram" href="#"></a></li>
+					<li class="header__item-social-mobile"><a class="insagram" href="#"></a></li>
+				</ul>
+				<a class="header__nav-tel" href="#">+7 (963) 000-22-30</a>
+				<button class="header__nav-button"  type="button">Заказать звонок</button>
+				<span class="header__nav-close"></span>
+			</div>
+		</div>
+	</header>
+
+<main>
+
+<main>
+    <nav class="bread-crumbs  wrap">
+        <ul class="bread-crumbs__list">
+            <li class="bread-crumbs__item">
+                <a class="bread-crumbs__link" href="">Главная</a>
+            </li>
+            <li class="bread-crumbs__item">
+                Блог
+            </li>
+        </ul>
+    </nav>
+    <section class="open-blog">
+        <div class="wrap">
+            <h2 class="open-blog__header">Заголовок новости</h2>
+            <p class="open-blog__data">09.09.2021</p>
+            <div class="open-blog__wrap">
+                <div class="open-blog__box-1">
+                    <img class="open-blog__image" src="assets/images/open-blog/image.png" alt="">
+                    <p class="open-blog__text open-blog__text-1">Несобственно-прямая речь, как справедливо считает И.Гальперин, редуцирует конкретный эпитет. Быличка, согласно традиционным представлениям, откровенна. Абстракционизм редуцирует деструктивный брахикаталектический стих, таким образом постепенно смыкается с сюжетом. Субъективное восприятие, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, аннигилирует лирический субъект. Эпитет неравномерен. Быличка, если уловить хореический ритм или аллитерацию на "р", аллитерирует метафоричный дольник.</p>
+                    <h3 class="open-blog__subject">Ролевой BTL: направленный маркетинг или реклама?</h3>
+                    <p class="open-blog__text open-blog__text-2">Ретроконверсия национального наследия, отбрасывая подробности, спонтанно транслирует креатив. Медиапланирование отражает стиль менеджмента. Повышение жизненных стандартов, отбрасывая подробности, конструктивно. Стратегический рыночный план, на первый взгляд, поддерживает межличностный баинг и селлинг.</p>        
+                    <div class="open-blog__swiper swiper">
+                        <div class="open-blog__wraper swiper-wrapper">
+                            <div class="open-blog__slide swiper-slide">
+                                <img src="assets/images/open-blog/image-1.png" alt="">
+                            </div>
+                            <div class="open-blog__slide swiper-slide">
+                                <img src="assets/images/open-blog/image-2.png" alt="">
+                            </div>
+                            <div class="open-blog__slide swiper-slide">
+                                <img src="assets/images/open-blog/image-3.png" alt="">
+                            </div>
+                            <div class="open-blog__slide swiper-slide">
+                                <img src="assets/images/open-blog/image-4.png" alt="">
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="open-blog__curent">
+                        <a class="open-blog__link" href="#">Назад</a>
+                        <p class="open-blog__views">62</p>
+                    </div>
+                </div>
+                <div class="open-blog__box-2">
+                    <h3 class="open-blog__heading">Читайте также</h3>
+                    <ul class="open-blog__list">
+                        <li class="open-blog__item">
+                            <a href="open-blog.html">
+                                <h3 class="open-blog__title">Монтаж и подключение щитка</h3>
+                                <p class="open-blog__desc">Процессуальное изменение, по определению, многопланово варьирует миксолидийский тетрахорд, и здесь процессуальное изменени в..</p>                                
+                            </a>
+                        </li>
+                        <li class="open-blog__item">
+                            <a href="open-blog.html">
+                                <h3 class="open-blog__title">Проверка работоспособности</h3>
+                                <p class="open-blog__desc">Процессуальное изменение, по определению, многопланово варьирует миксолидийский</p>                                
+                            </a>
+                        </li>
+                        <li class="open-blog__item">
+                            <a href="open-blog.html">
+                                <h3 class="open-blog__title">Требования к электромонтажу</h3>
+                                <p class="open-blog__desc">Процессуальное изменение, по определению, многопланово варьирует миксолидийский тетрахорд, и здесь процессуальное изменени в..</p>                                
+                            </a>
+                        </li>
+                        <li class="open-blog__item">
+                            <a href="open-blog.html">
+                                <h3 class="open-blog__title">Проектирование</h3>
+                                <p class="open-blog__desc">Процессуальное изменение, по определению, многопланово варьирует миксолидийский</p>                                
+                            </a>
+                        </li>
+                        <li class="open-blog__item">
+                            <a href="open-blog.html">
+                                <h3 class="open-blog__title">Разметка</h3>
+                                <p class="open-blog__desc">Всю выполненную на бумаге схему переносят на соответствующие реальные места. Разметка выполняется на стенах, потолке, если нужно, то и на полу помещений.</p>                                
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+</main>
+<footer class="footer">
+    <div class="wrap">
+        <div class="footer__wrap">
+            <div class="footer__container-1">
+                <div class="footer__box-logo">
+                    <picture>
+                        <source srcset="assets/images/header/logo-desctop.svg" media="(min-width: 768px)"  >
+                        <img class="footer__logo" src="assets/images/header/logo-mobile.svg" alt="Логотип" width="47" height="47">
+                    </picture>   
+                    <div class="footer__logo-text-con">
+                        <h2 class="footer__logo-title">Всё ВКЛючено</h2>
+                        <p class="footer__logo-text">Электромонтажные работы в Кирове</p>
+                    </div>
+                </div>
+                <div class="footer__rating">
+                    <p class="footer__balls">Рейтинг 4,9</p>
+                    <span class="footer__voices">(715 голосов)</span>
+                </div>
+                <div class="footer__individual-entrepreneur">
+                    ИП Семакин Олег Андреевич<br>
+                    ИНН: 432906685357<br>
+                    ОГРНИП: 320435000004005<br>
+                </div>                
+            </div>
+            <div class="footer__container-2">
+                <div class="footer__nav-container-1">
+                    <h2 class="footer__caption">Услуги</h2>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a href="open-service.html">Электромонтаж в квартирах</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="open-service.html">Электромонтаж производственных объектов</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="open-service.html">Электромонтаж в частных домах</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="open-service.html">Монтаж системы “Умный дом”</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="open-service.html">Сборка электрощитов</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="open-service.html">Монтаж систем ИБП</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="open-service.html">Скрытая проводка в деревянных домах</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="service.html">Все услуги</a> 
+                        </li>
+                    </ul>                    
+                </div>
+                <div class="footer__nav-container-2">
+                    <h2 class="footer__caption">Посетителю</h2>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a href="index.html">Главная</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="blog.html">Блог</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="service.html">Услуги</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="#">Отзывы</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="price.html">Цены</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="contact.html">Контакты</a> 
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="our-works.html">Наши работы</a> 
+                        </li>
+                    </ul>  
+                </div>
+            </div>
+            <div class="footer__contact">
+                <h2 class="footer__contact-header">Контакты</h2>
+                <a class="footer__link footer__contact-tel" href="#">+7 (963) 000-22-30</a>
+                <a class="footer__link footer__contact-mail" href="#">all_is_on@mail.ru</a>
+                <ul class="footer__social social-list">
+                    <li class="social-item social-small">
+                        <a href="#">
+                            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="5" fill="#111"/><path d="M21.334 10.69c-1.39-1.42-3.31-2.19-5.273-2.19-4.169 0-7.52 3.365-7.48 7.46 0 1.297.369 2.553.982 3.689L8.5 23.5l3.965-1.014a7.345 7.345 0 0 0 3.555.892c4.128 0 7.48-3.364 7.48-7.46a7.327 7.327 0 0 0-2.166-5.229ZM16.06 22.121c-1.103 0-2.207-.284-3.147-.852l-.245-.121-2.37.608.612-2.311-.163-.243c-1.798-2.879-.94-6.69 2.003-8.473 2.943-1.784 6.743-.933 8.542 1.986 1.798 2.92.94 6.69-2.003 8.473a5.995 5.995 0 0 1-3.229.933Zm3.597-4.5-.45-.203s-.653-.284-1.062-.487c-.041 0-.082-.04-.123-.04a.593.593 0 0 0-.286.081s-.04.04-.613.69a.225.225 0 0 1-.204.12h-.041a.311.311 0 0 1-.164-.08l-.204-.081c-.45-.203-.858-.446-1.185-.77-.082-.082-.205-.163-.287-.244-.286-.284-.572-.608-.776-.973l-.04-.08c-.042-.041-.042-.082-.083-.163 0-.081 0-.162.041-.203 0 0 .164-.203.286-.324.082-.081.123-.203.205-.284.081-.121.122-.284.081-.405-.04-.203-.53-1.298-.653-1.54a.473.473 0 0 0-.287-.204h-.449c-.082 0-.164.041-.246.041l-.04.04c-.082.041-.164.122-.246.163-.081.08-.122.162-.204.243-.286.365-.45.81-.45 1.257 0 .324.082.648.205.932l.04.122c.369.77.859 1.46 1.513 2.067l.164.162c.122.122.245.203.326.325a7.324 7.324 0 0 0 2.943 1.54c.123.04.286.04.409.081h.409c.204 0 .45-.08.613-.162.122-.08.204-.08.286-.162l.082-.081c.081-.081.163-.122.245-.203a1.05 1.05 0 0 0 .204-.243c.082-.162.123-.365.164-.567v-.284s-.041-.04-.123-.081Z" fill="#0DC143"/></svg>
+                        </a>
+                    </li>
+                    <li class="social-item social-small">
+                        <a href="#">
+                            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="5" fill="#111"/><path d="M21.967 9.561c-.397-.365-2.004-1.533-5.586-1.55 0 0-4.223-.255-6.28 1.633-1.147 1.146-1.55 2.82-1.592 4.901-.042 2.078-.096 5.974 3.66 7.03h.002l-.003 1.61s-.022.653.407.785c.518.16.825-.337 1.322-.871.272-.295.646-.724.931-1.053 2.568.214 4.543-.279 4.767-.352.518-.17 3.454-.545 3.93-4.44.494-4.008-.24-6.547-1.558-7.693Zm.435 7.41c-.403 3.253-2.782 3.458-3.22 3.599-.186.06-1.92.493-4.104.349 0 0-1.626 1.962-2.132 2.471-.08.08-.173.112-.234.096-.086-.022-.112-.125-.109-.275 0-.218.013-2.68.013-2.68-.003 0-.003 0 0 0-3.179-.88-2.993-4.196-2.958-5.931.036-1.735.362-3.16 1.332-4.117 1.738-1.575 5.327-1.341 5.327-1.341 3.028.012 4.478.925 4.814 1.229 1.117.96 1.687 3.25 1.271 6.6Z" fill="#675DA9"/><path d="M17.857 14.66a.203.203 0 0 1-.202-.192c-.035-.688-.359-1.024-1.018-1.06a.204.204 0 0 1 .022-.406c.871.048 1.358.548 1.402 1.444a.2.2 0 0 1-.192.211c-.006.004-.01.004-.012.004Z" fill="#675DA9"/><path d="M18.894 15.006h-.003a.204.204 0 0 1-.199-.208c.016-.691-.182-1.251-.605-1.712-.42-.461-.999-.711-1.764-.766a.201.201 0 0 1-.186-.217.201.201 0 0 1 .218-.186c.864.064 1.546.365 2.033.896.49.535.727 1.204.71 1.995a.205.205 0 0 1-.204.198Z" fill="#675DA9"/><path d="M19.956 15.422a.2.2 0 0 1-.201-.201c-.01-1.24-.365-2.184-1.089-2.891-.713-.698-1.62-1.053-2.685-1.063a.204.204 0 0 1 0-.406c1.175.01 2.173.403 2.964 1.178.794.774 1.2 1.844 1.213 3.175a.2.2 0 0 1-.202.208c.004 0 .004 0 0 0Zm-3.271 1.745s.285.026.439-.163l.297-.375c.144-.186.493-.304.832-.115.19.106.532.317.743.474.227.166.688.55.692.553.22.186.272.458.121.75v.006a3.124 3.124 0 0 1-.62.765c-.004 0-.004.003-.007.003-.215.18-.426.282-.63.304-.026.007-.055.007-.094.007a.872.872 0 0 1-.268-.042l-.007-.01c-.32-.09-.852-.313-1.735-.803a10.31 10.31 0 0 1-1.46-.963 7.479 7.479 0 0 1-.678-.605l-.023-.023-.022-.022-.023-.023a8.04 8.04 0 0 1-.582-.656 10.128 10.128 0 0 1-.964-1.46c-.49-.886-.714-1.418-.803-1.735l-.01-.006a.87.87 0 0 1-.041-.269c0-.039 0-.067.006-.093.025-.208.128-.416.304-.63 0-.004.003-.004.003-.007.237-.262.493-.467.765-.62h.007c.288-.151.56-.1.749.12 0 0 .387.465.554.692.156.215.368.554.473.743.19.34.07.688-.115.832l-.374.298c-.19.154-.164.438-.164.438s.554 2.107 2.635 2.635Z" fill="#675DA9"/></svg>
+                        </a>
+                    </li>
+                    <li class="social-item social-small">
+                        <a href="#">
+                            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="5" fill="#111"/><path d="M23.915 19.757a1.08 1.08 0 0 0-.054-.104c-.278-.501-.808-1.116-1.591-1.844l-.017-.017-.008-.008-.008-.009h-.009a9.828 9.828 0 0 1-.675-.684c-.172-.222-.21-.448-.116-.676.066-.172.316-.536.75-1.093.227-.294.408-.53.54-.709.962-1.28 1.378-2.097 1.25-2.453l-.05-.083c-.032-.05-.119-.096-.257-.138a1.31 1.31 0 0 0-.534-.02l-2.399.016a.31.31 0 0 0-.166.004l-.109.025-.041.021-.034.025a.37.37 0 0 0-.091.088.573.573 0 0 0-.083.146 13.638 13.638 0 0 1-.892 1.877 17.82 17.82 0 0 1-.566.897c-.172.253-.317.44-.433.56a3.122 3.122 0 0 1-.317.287c-.095.072-.167.103-.217.092a6.325 6.325 0 0 1-.141-.034.554.554 0 0 1-.188-.204.916.916 0 0 1-.096-.325 3.586 3.586 0 0 1-.029-.338 7.09 7.09 0 0 1 .005-.401c.005-.172.008-.29.008-.35 0-.212.004-.441.012-.689l.021-.588c.006-.145.008-.298.008-.459 0-.161-.01-.288-.029-.38a1.305 1.305 0 0 0-.087-.267.448.448 0 0 0-.17-.2.96.96 0 0 0-.28-.112 5.535 5.535 0 0 0-1.124-.109c-1.034-.01-1.697.056-1.992.2a1.122 1.122 0 0 0-.316.25c-.1.123-.114.19-.042.2.333.05.57.17.708.36l.05.1c.04.072.078.2.117.384.039.183.064.386.075.609a6.44 6.44 0 0 1 0 1.043c-.028.289-.054.514-.08.675a1.354 1.354 0 0 1-.212.576.145.145 0 0 1-.041.042.624.624 0 0 1-.225.042c-.078 0-.172-.04-.284-.117a2.003 2.003 0 0 1-.345-.322 4.294 4.294 0 0 1-.404-.571 9.962 9.962 0 0 1-.467-.868l-.133-.242a20.84 20.84 0 0 1-.341-.68 13.122 13.122 0 0 1-.384-.863.55.55 0 0 0-.2-.267l-.041-.025a.878.878 0 0 0-.325-.125l-2.283.016c-.233 0-.391.053-.475.159l-.033.05A.27.27 0 0 0 8 12.26c0 .061.017.136.05.226.333.784.696 1.54 1.087 2.269.392.728.732 1.315 1.02 1.76.29.445.584.865.884 1.26.3.395.498.648.595.76.097.11.174.194.23.25l.208.2c.133.133.329.293.587.48.258.186.544.37.858.55.314.181.679.328 1.095.442.417.115.822.16 1.217.138h.958c.194-.017.341-.078.441-.183l.033-.042a.554.554 0 0 0 .063-.154.832.832 0 0 0 .029-.23 2.75 2.75 0 0 1 .054-.646 1.71 1.71 0 0 1 .142-.434 1.066 1.066 0 0 1 .32-.367.543.543 0 0 1 .067-.03c.133-.044.29 0 .471.13.18.13.35.292.508.484.159.192.349.407.57.646.223.24.417.418.584.535l.166.1c.112.067.256.128.434.183.177.056.333.07.466.042l2.133-.033c.21 0 .375-.035.491-.105.117-.07.186-.146.209-.23a.646.646 0 0 0 .004-.283 1.06 1.06 0 0 0-.059-.221Z" fill="#436EAB"/></svg>
+                        </a>
+                    </li>
+                    <li class="social-item social-small">
+                        <a href="#">
+                            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="5" fill="#111"/><g clip-path="url(#a)"><path d="m14.278 18.12-.265 3.723c.379 0 .543-.162.74-.358l1.775-1.696 3.678 2.694c.675.376 1.15.178 1.332-.621l2.415-11.315c.215-.998-.36-1.388-1.017-1.143L8.743 14.838c-.97.376-.954.916-.165 1.16l3.629 1.13 8.428-5.275c.397-.262.757-.117.46.146l-6.817 6.122Z" fill="#419FD9"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(8 8)" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                        </a>
+                    </li>
+                    <li class="social-item social-small">
+                        <a href="#">
+                            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="5" fill="#111"/><path d="M19.031 8.5H12.97a4.474 4.474 0 0 0-4.47 4.469v6.062a4.474 4.474 0 0 0 4.469 4.469h6.062a4.474 4.474 0 0 0 4.469-4.469V12.97a4.474 4.474 0 0 0-4.469-4.47Zm2.96 10.531a2.96 2.96 0 0 1-2.96 2.96H12.97a2.96 2.96 0 0 1-2.96-2.96V12.97a2.96 2.96 0 0 1 2.96-2.96h6.062a2.96 2.96 0 0 1 2.96 2.96v6.062Z" fill="url(#a)"/><path d="M16 12c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4Zm0 6.444a2.444 2.444 0 1 1 0-4.888 2.444 2.444 0 0 1 0 4.888Z" fill="url(#b)"/><path d="M20.25 12.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="url(#c)"/><defs><linearGradient id="a" x1="16" y1="23.456" x2="16" y2="8.617" gradientUnits="userSpaceOnUse"><stop stop-color="#E09B3D"/><stop offset=".3" stop-color="#C74C4D"/><stop offset=".6" stop-color="#C21975"/><stop offset="1" stop-color="#7024C4"/></linearGradient><linearGradient id="b" x1="16" y1="23.688" x2="16" y2="8.387" gradientUnits="userSpaceOnUse"><stop stop-color="#E09B3D"/><stop offset=".3" stop-color="#C74C4D"/><stop offset=".6" stop-color="#C21975"/><stop offset="1" stop-color="#7024C4"/></linearGradient><linearGradient id="c" x1="20.25" y1="20.872" x2="20.25" y2="8.9" gradientUnits="userSpaceOnUse"><stop stop-color="#E09B3D"/><stop offset=".3" stop-color="#C74C4D"/><stop offset=".6" stop-color="#C21975"/><stop offset="1" stop-color="#7024C4"/></linearGradient></defs></svg>
+                        </a>
+                    </li>
+                </ul>
+                <button class="footer__contact-button" data-modal="callback" type="button">Оставить заявку</button>
+            </div>
+        </div>  
+    </div>
+</footer>
+<div class="modal-show">
+
+</div>
+
+<div class="modal modal-callback" hidden>
+    <div class="modal__popup">
+        <h2 class="modal__header">Оставить заявку</h2>
+        <p class="modal__text">
+            Оставьте ваши контакты и мы перезвоним вам в течении 15 минут
+        </p>
+        <form class="modal__form" method="POST">
+            <input class="modal__input modal__input-name" type="text" name="name" placeholder="Имя">
+            <input class="modal__input modal__input-tel" type="tel" name="tel" placeholder="+7(999) 999-99-99">
+            <div class="modal__box-checkbox">
+                <input class="modal__checkbox" type="checkbox" name="modal-checkbox" id="modal-checkbox">
+                <label for="modal-checkbox">
+                    Даю согласие на обработку <a href="#">персональных данных</a> 
+                </label>
+            </div>
+            <button class="modal__submit" type="submit">Оставить заявку</button>
+        </form> 
+        <button class="modal__clsoe modal__close" type="button"></button>
+    </div>
+</div>
+<div class="modal-processing">
+    <div class="modal-processing__popup">
+        <h2 class="modal-processing__header">Заявка в обработке</h2>
+        <p class="modal-processing__text">В ближайшее время мы перезвоним Вам.Пожалуйста, оставайтесь на связи!</p>
+        <button class="modal-processing__button" type="button">Закрыть</button>
+        <button class="modal-processing__close"></button>
+    </div>
+</div>
+
+<script>
+    let opetnFooterList = document.querySelectorAll('.footer__caption')
+
+    for(let i = 0; i < opetnFooterList.length; i++) {
+        opetnFooterList[i].addEventListener('click', function() {
+            opetnFooterList[i].classList.toggle('footer__caption-active')
+        })        
+    }
+
+</script>
+<script src="assets/app.min.js"></script>
+</body>
+</html>
+<script>
+        
+    //СЛАЙДЕР ФИШЕК
+    const slideOpenBlog = new Swiper('.open-blog__swiper', {
+        loop: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            475: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            980: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+        },
+    });
+</script>
