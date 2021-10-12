@@ -112,40 +112,149 @@
 <main>
 
 <main>  
-    <div class="product-page--img" style="width: 320px; overflow: hidden;  margin: 0 auto; margin-top: 100px;" >
-        <div class="product-page-container swiper-container">
-            <div class="product-page-wrapper swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="product-page-img" src="assets/images/blog/image-1.png" width="300" height="213">
-                </div>
+
+
+    <div class="wrap">
+        <div class="table">
+            <div class="table__header">
+                <p>Виды работ</p> <p>Единица изм.</p> <p>Цена</p>
             </div>
-        </div>
-        <div class="image-min-slider swiper-container">
-            <div class="image-min-slider-wrapper swiper-wrapper">
-                <div class="image-min-slider-slide swiper-slide">
-                    <div class="image-min-slider__image"><img src="assets/images/blog/image-1.png" alt=""></div>
-                </div>
-                <div class="image-min-slider-slide swiper-slide">
-                    <div class="image-min-slider__image"><img src="assets/images/blog/image-2.png" alt=""></div>
-                </div>
-                <div class="image-min-slider-slide swiper-slide">
-                    <div class="image-min-slider__image"><img src="assets/images/blog/image-1.png" alt=""></div>
-                </div>
-                <div class="image-min-slider-slide swiper-slide">
-                    <div class="image-min-slider__image"><img src="assets/images/blog/image-1.png" alt=""></div>
-                </div>
-                <div class="image-min-slider-slide swiper-slide">
-                    <div class="image-min-slider__image"><img src="assets/images/blog/image-1.png" alt=""></div>
-                </div>
-                <div class="image-min-slider-slide swiper-slide">
-                    <div class="image-min-slider__image"><img src="assets/images/blog/image-1.png" alt=""></div>
-                </div>
+            <div class="table__name">
+                <p>Сверление и штробление</p>
+            </div>
+            <div class="table__price">
+                <h2 class="table__titles">Сверление отверстий в гипсокартоне под установочную коробку</h2>
+                <p class="table__rate">шт.</p>
+                <p class="table__rub">90 руб.</p>
+                <button class="table__button" type="button">Оставить заявку</button>
             </div>
         </div>
     </div>
 
 
+    <style>
+        .table {
+            width: 100%;
+            border: 1px solid #28262E;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 300px;
+            margin-bottom: 300px;
+        }
+        .table__header {
+            background: #2E2C38;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #B1BCC1;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 25px;
+            padding-right: 22px;
+            display: grid;
+            grid-template-columns: 39%  23.2% 18% 20.4%;
+        }
 
+        .table__header  p:nth-child(2){
+            text-align: right;
+        }
+        .table__header  p:nth-child(3){
+            text-align: right;
+        }
+        .table__name {
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background: #111111;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #B1BCC1;
+            text-align: center;
+        }
+        .table__price {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 25px;
+            display: grid;
+            grid-template-columns: 39%  23.2% 18% 20.4%;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #EEF1FB;
+            text-align: end;
+            background: #2E2C38;
+        }
+        .table__titles {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: left;
+        }
+        .table__rate {
+            text-align: right;
+        }
+        .table__rub {
+            text-align: right;
+        }
+        .table__button {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            color: #FFC226;
+            padding: 0;
+            background-color: inherit;
+            width: fit-content;
+            height: fit-content;
+            text-align: right;
+            margin-left: auto;
+            margin-right: 30px;
+        }
+
+        @media(max-width: 768px) {
+        .table__header {
+            font-size: 14px;
+            line-height: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 15px;
+        }
+        .table__name {
+            padding: 15px;
+            font-size: 14px;
+            line-height: 100%;
+        }
+        .table__price {
+            width: 100%;
+            padding: 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+            font-size: 14px;
+        }
+        .table__price {
+            font-size: 14px;
+            line-height: 100%;
+        }
+        .table__titles {
+            font-size: 14px;
+            line-height: 100%;
+        }
+        .table__button {
+            display: block;
+            column-span: 3;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-top: 10px;
+            grid-column: span 3;
+        }
+        .table__rate {
+            text-align: center;
+        }
+        .table__rub {
+            text-align: center;
+        }
+        }
+    </style>
 </main>
 </main>
 <footer class="footer">
@@ -311,15 +420,3 @@
 <script src="assets/app.min.js"></script>
 </body>
 </html>
-<script>
-    var swiper = new Swiper(".image-min-slider", {
-    spaceBetween: 10,
-    slidesPerView: 4,
-    });
-    var swiper2 = new Swiper(".product-page-container", {
-        spaceBetween: 10,
-        thumbs: {
-            swiper: swiper,
-        },
-    });
-</script>

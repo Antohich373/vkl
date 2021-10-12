@@ -359,25 +359,38 @@
             <div class="stages__swiper swiper">
                 <div class="stages__wraper swiper-wrapper">
                     <div class="stages__slide swiper-slide">
-                            <img class="stages__image" src="assets/images/stages/image-1.png" alt="">
+                            <picture>
+                                <source srcset="assets/images/stages/image-1.png" media="(min-width: 768px)"  >
+                                <img class="stages__image" src="assets/images/stages/image-1-desctop.png" alt="My image" width="47" height="47">
+                            </picture>  
+                            
                             <h3 class="stages__title">Замер</h3>
                             <p class="stages__text">Выезжаем к Вам и делаем <br> необходимые замеры</p>
                             <span class="stages__number"> <p>1</p> </span>
                     </div>
                     <div class="stages__slide swiper-slide">
-                            <img class="stages__image" src="assets/images/stages/image-2.png" alt="">
+                        <picture>
+                            <source srcset="assets/images/stages/image-2.png" media="(min-width: 768px)"  >
+                            <img class="stages__image" src="assets/images/stages/image-2-desctop.png" alt="My image" width="47" height="47">
+                        </picture>  
                             <h3 class="stages__title">Смета</h3>
                             <p class="stages__text">Составление <br> подробной сметы </p>
                             <span class="stages__number">2</span>
                     </div>
                     <div class="stages__slide swiper-slide">
-                            <img class="stages__image" src="assets/images/stages/image-3.png" alt="">
+                        <picture>
+                            <source srcset="assets/images/stages/image-3.png" media="(min-width: 768px)"  >
+                            <img class="stages__image" src="assets/images/stages/image-3-desctop.png" alt="My image" width="47" height="47">
+                        </picture>  
                             <h3 class="stages__title">Договор</h3>
                             <p class="stages__text">Обсуждаем все детали работы <br> и подписываем договор</p>
                             <span class="stages__number">3</span>
                     </div>
-                    <div class="stages__slide swiper-slide">
-                        <img class="stages__image" src="assets/images/stages/image-4.png" alt="">
+                    <div class="stages__slide swiper-slide"> 
+                        <picture>    
+                            <source srcset="assets/images/stages/image-4.png" media="(min-width: 768px)"  >
+                            <img class="stages__image" src="assets/images/stages/image-4-desctop.png">
+                        </picture>  
                         <h3 class="stages__title">Монтаж</h3>
                         <p class="stages__text">Производим <br> монтаж</p>
                         <span class="stages__number">4</span>
@@ -396,68 +409,50 @@
                 </div>
             </form>
             <div class="table-box">
-                <table class="price-table">
-                    <thead class="price-table__header">
-                        <tr class="price-table__header-name">
-                        <th>Виды работ</th>
-                        <th>Единица изм.</th>
-                        <th colspan="2">Цена</th>
-                        </tr>
-                        <tr class="price-table__tite">
-                            <th colspan="4">Сверление и штробление</th>
-                        </tr>
-                    </thead>
-                    <tbody class="price-table__body">
-                        <tr class="price-table__specifications">
-                            <td>Сверление отверстий в гипсокартоне под установочную коробку</td>
-                            <td>шт.</td>
-                            <td>90 руб.</td>
-                            <td> <button class="price-table__button" type="button">Оставить заявку</button> </td>
-                        </tr>
-                        <tr class="price-table__specifications">
-                            <td>Сверление отверстий для подрозетников в дереве</td>
-                            <td>шт.</td>
-                            <td>150 руб.</td>
-                            <td> <button class="price-table__button" type="button">Оставить заявку</button> </td>
-                        </tr>
-                        <tr class="price-table__specifications">
-                            <td>Сверление отверстий для подрозетников в дереве</td>
-                            <td>шт.</td>
-                            <td>150 руб.</td>
-                            <td> <button class="price-table__button" type="button">Оставить заявку</button> </td>
-                        </tr>
-                        <tr class="price-table__specifications">
-                            <td>Сверление отверстий для подрозетников в дереве</td>
-                            <td>шт.</td>
-                            <td>150 руб.</td>
-                            <td> <button class="price-table__button" type="button">Оставить заявку</button> </td>
-                        </tr>
-                        <tr class="price-table__specifications">
-                            <td>Сверление отверстий для подрозетников в дереве</td>
-                            <td>шт.</td>
-                            <td>150 руб.</td>
-                            <td> <button class="price-table__button" type="button">Оставить заявку</button> </td>
-                        </tr>
-                        <tr class="price-table__specifications">
-                            <td>Сверление отверстий для подрозетников в дереве</td>
-                            <td>шт.</td>
-                            <td>150 руб.</td>
-                            <td> <button class="price-table__button" type="button">Оставить заявку</button> </td>
-                        </tr>
-                        <tr class="price-table__specifications">
-                            <td>Сверление отверстий для подрозетников в дереве</td>
-                            <td>шт.</td>
-                            <td>150 руб.</td>
-                            <td> <button class="price-table__button" type="button">Оставить заявку</button> </td>
-                        </tr>
-                        <tr class="price-table__specifications">
-                            <td>Сверление отверстий для подрозетников в дереве</td>
-                            <td>шт.</td>
-                            <td>150 руб.</td>
-                            <td> <button class="price-table__button" type="button">Оставить заявку</button> </td>
-                        </tr>
-                    </tbody>
-                </table>                
+                <div class="table">
+                    <div class="table__header">
+                        <p>Виды работ</p> <p>Единица изм.</p> <p>Цена</p>
+                    </div>
+                    <div class="table__name">
+                        <p>Сверление и штробление</p>
+                    </div>
+                    <div class="table__price">
+                        <h2 class="table__titles">Сверление отверстий в гипсокартоне под установочную коробку</h2>
+                        <p class="table__rate">шт.</p>
+                        <p class="table__rub">90 руб.</p>
+                        <button class="table__button" type="button">Оставить заявку</button>
+                    </div>
+                    <div class="table__price">
+                        <h2 class="table__titles">Сверление отверстий для подрозетников в дереве</h2>
+                        <p class="table__rate">шт.</p>
+                        <p class="table__rub">90 руб.</p>
+                        <button class="table__button" type="button">Оставить заявку</button>
+                    </div>
+                    <div class="table__price">
+                        <h2 class="table__titles">Сверление отверстий для подрозетников в дереве</h2>
+                        <p class="table__rate">шт.</p>
+                        <p class="table__rub">90 руб.</p>
+                        <button class="table__button" type="button">Оставить заявку</button>
+                    </div>
+                    <div class="table__price">
+                        <h2 class="table__titles">Сверление отверстий для подрозетников в дереве</h2>
+                        <p class="table__rate">шт.</p>
+                        <p class="table__rub">90 руб.</p>
+                        <button class="table__button" type="button">Оставить заявку</button>
+                    </div>
+                    <div class="table__price">
+                        <h2 class="table__titles">Сверление отверстий для подрозетников в дереве</h2>
+                        <p class="table__rate">шт.</p>
+                        <p class="table__rub">90 руб.</p>
+                        <button class="table__button" type="button">Оставить заявку</button>
+                    </div>
+                    <div class="table__price">
+                        <h2 class="table__titles">Сверление отверстий для подрозетников в дереве</h2>
+                        <p class="table__rate">шт.</p>
+                        <p class="table__rub">90 руб.</p>
+                        <button class="table__button" type="button">Оставить заявку</button>
+                    </div>
+                </div>             
             </div>
             <button class="price-list__all" type="button">Показать полностью</button>
         </div>
@@ -501,29 +496,52 @@
                                 <div class="our-work__page-container swiper">
                                     <div class="our-work__page-wrapper swiper-wrapper">
                                         <div class="our-work__slide swiper-slide">
-                                            <img class="our-work__page-img" src="assets/images/blog/image-1.png" width="300" height="213">
+                                            <img class="our-work__page-img" src="assets/images/our-works/iamge-work-1.png" width="300" height="213">
                                         </div>
                                         <div class="our-work__slide swiper-slide">
-                                            <img class="our-work__page-img" src="assets/images/blog/image-1.png" width="300" height="213">
+                                            <img class="our-work__page-img" src="assets/images/our-works/iamge-work-1.png" width="300" height="213">
                                         </div>
                                         <div class="our-work__slide swiper-slide">
-                                            <img class="our-work__page-img" src="assets/images/blog/image-1.png" width="300" height="213">
+                                            <img class="our-work__page-img" src="assets/images/our-works/iamge-work-1.png" width="300" height="213">
+                                        </div>
+                                        <div class="our-work__slide swiper-slide">
+                                            <img class="our-work__page-img" src="assets/images/our-works/iamge-work-1.png" width="300" height="213">
+                                        </div>
+                                        <div class="our-work__slide swiper-slide">
+                                            <img class="our-work__page-img" src="assets/images/our-works/iamge-work-1.png" width="300" height="213">
+                                        </div>
+                                        <div class="our-work__slide swiper-slide">
+                                            <img class="our-work__page-img" src="assets/images/our-works/iamge-work-1.png" width="300" height="213">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="our-work__min-swiper swiper-container">
-                                    <div class="our-work__min-wrapper swiper-wrapper">
-                                        <div class="our-work__min-slide swiper-slide">
-                                            <div class="our-work__min-image"><img src="assets/images/blog/image-1.png"></div>
+                                <div class="min-slider-wrap">
+                                    <button class="button-min-slide  button-min-slide-next" type="button"></button>
+                                    <button class="button-min-slide  button-min-slide-prev" type="button"></button>
+                                    <div class="our-work__min-swiper swiper-container">
+                                        <div class="our-work__min-wrapper swiper-wrapper">
+                                            <div class="our-work__min-slide swiper-slide">
+                                                <div class="our-work__min-image"><img src="assets/images/our-works/iamge-work-1.png"></div>
+                                            </div>
+                                            <div class="our-work__min-slide swiper-slide">
+                                                <div class="our-work__min-image"><img src="assets/images/our-works/iamge-work-1.png"></div>
+                                            </div>
+                                            <div class="our-work__min-slide swiper-slide">
+                                                <div class="our-work__min-image"><img src="assets/images/our-works/iamge-work-1.png"></div>
+                                            </div>
+                                            <div class="our-work__min-slide swiper-slide">
+                                                <div class="our-work__min-image"><img src="assets/images/our-works/iamge-work-1.png"></div>
+                                            </div>
+                                            <div class="our-work__min-slide swiper-slide">
+                                                <div class="our-work__min-image"><img src="assets/images/our-works/iamge-work-1.png"></div>
+                                            </div>
+                                            <div class="our-work__min-slide swiper-slide">
+                                                <div class="our-work__min-image"><img src="assets/images/our-works/iamge-work-1.png"></div>
+                                            </div>
                                         </div>
-                                        <div class="our-work__min-slide swiper-slide">
-                                            <div class="our-work__min-image"><img src="assets/images/blog/image-1.png"></div>
-                                        </div>
-                                        <div class="our-work__min-slide swiper-slide">
-                                            <div class="our-work__min-image"><img src="assets/images/blog/image-1.png"></div>
-                                        </div>
-                                    </div>
+                                    </div>                                    
                                 </div>
+
                             </div>
                             <div class="our-work__discription">
                                 <h2 class="our-work__title">Электромонтаж  в коттедже</h2>
@@ -593,15 +611,15 @@
 
             document.addEventListener("DOMContentLoaded", () => {
                 var swipereasada = new Swiper(".our-work__sliders--index1 .our-work__min-swiper", {
-                            spaceBetween: 5,
-                            slidesPerView: 3,
-                            breakpoints: {
-                                1100: {
-                                    slidesPerView: 6,
-                                    spaceBetween: 20,
-                                },
-                            }
-                            });
+                        spaceBetween: 5,
+                        slidesPerView: 3,
+                        breakpoints: {
+                            1100: {
+                                slidesPerView: 6,
+                                spaceBetween: 20,
+                            },
+                        }
+                        });
                 var swiper2 = new Swiper(".our-work__sliders--index1 .our-work__page-container", {
                     spaceBetween: 10,
                     thumbs: {
@@ -646,8 +664,8 @@
     <section class="lot-work">
         <div class="lot-work__wrap wrap">
             <h2 class="lot-work__header">Успешно сдали <span>более 1 000 проектов</span> в Кирове и области</h2>
-            <div>
-                <img class="lot-work__image" src="assets/images/lot-work/map.png">
+            <div class="lot-work__map" id="lot-work__map">
+
             </div>
         </div>
   
@@ -667,6 +685,54 @@
             </div>
         </div>
 
+    </section>
+    <section class="feedback">
+        <div class="wrap">
+            <h2 class="feedback__header">Отзывы клиентов</h2>
+            <div class="reviews__controls">
+                <button class="reviews__button reviews__button-video reviews__button-active" type="button">Видеоотзывы</button>
+                <button class="reviews__button reviews__button-social" type="button">Отзывы из соцсетей</button>
+            </div>
+            <div class="feedback__video reviews__box-video">
+                <button class="feedback__video__button feedback__video__button-next" type="button"></button>
+                <button class="feedback__video__button feedback__video__button-prev" type="button"></button>
+                <div class="feedback__video__swiper swiper">
+                    <div class="feedback__video__wraper swiper-wrapper">
+                        <div class="feedback__video__slide swiper-slide">
+                            <img class="feedback__video__image" src="assets/images/feedback/image-1.png">
+                            <button class="feedback__video__play" type="button"></button>
+                        </div> 
+                        <div class="feedback__video__slide swiper-slide">
+                            <img class="feedback__video__image" src="assets/images/feedback/image-2.png">
+                            <button class="feedback__video__play" type="button"></button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="feedback__social reviews__box-social" style="display: none;">
+                <button class="feedback__social__button feedback__social__button-next" type="button"></button>
+                <button class="feedback__social__button feedback__social__button-prev" type="button"></button>
+                <div class="feedback__social__swiper swiper">
+                    <div class="feedback__social__wraper swiper-wrapper">
+                        <div class="feedback__social__slide swiper-slide">
+                            <img class="feedback__social__image" src="assets/images/feedback/social.png">
+                        </div> 
+                        <div class="feedback__social__slide swiper-slide">
+                            <img class="feedback__social__image" src="assets/images/feedback/social.png">
+                        </div> 
+                        <div class="feedback__social__slide swiper-slide">
+                            <img class="feedback__social__image" src="assets/images/feedback/social.png">
+                        </div> 
+                        <div class="feedback__social__slide swiper-slide">
+                            <img class="feedback__social__image" src="assets/images/feedback/social.png">
+                        </div> 
+                        <div class="feedback__social__slide swiper-slide">
+                            <img class="feedback__social__image" src="assets/images/feedback/social.png">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="pluses">
         <div class="pluses__wrap wrap">
@@ -1059,12 +1125,12 @@
                     </div>
                     <button class="contacts__button" data-modal="callback" type="button">Оставить заявку</button>
                 </div>
-                <div class="contacts__map">
+                <div class="contacts__map" id="contacts__map">
                     <p class="contacts__adress">
                         Адрес офиса:<br>
                         Луганская 49
                     </p>
-                    <img src="assets/images/contacts/map.png">
+                    <!-- <img src="assets/images/contacts/map.png"> -->
                 </div>
             </div>
         </div>
@@ -1333,3 +1399,146 @@
 <script src="assets/app.min.js"></script>
 </body>
 </html>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=e1d12f77-c3d9-40bc-bcd0-ac6e558860db&lang=ru_RU"></script>
+<script>
+        //сладер отзывы видео
+        const feedbackVideo = new Swiper('.feedback__video__swiper', {
+        navigation: {
+            nextEl: '.feedback__video__button-next',
+            prevEl: '.feedback__video__button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            520: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+        },
+    });
+    
+    //сладер отзывы видео
+    const feedbackSocial = new Swiper('.feedback__social__swiper', {
+        navigation: {
+            nextEl: '.feedback__social__button-next',
+            prevEl: '.feedback__social__button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            590: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            968: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+        },
+    });
+
+    //УДАЛЯЕМ КЛАСС У ВСЕХ И ДОБАВЛЯЕМ НА КОТОРЫЙ КЛИКНУЛИ
+    let parent = document.querySelector('.reviews__controls');
+    let menuItem = parent.querySelectorAll('.reviews__button');
+
+    parent.addEventListener('click', (event) => {
+    // Отлавливаем элемент в родители на который мы нажали
+    let target = event.target;
+                
+    // Проверяем тот ли это элемент который нам нужен
+    if(target.classList.contains('reviews__button')) {
+    for(let i = 0; i < menuItem.length; i++) {
+        // Убираем у других
+        menuItem[i].classList.remove('reviews__button-active');
+    }
+        // Добавляем тому на который нажали
+        target.classList.add('reviews__button-active');
+    } 
+    });    
+
+    let buttonVideo = document.querySelector('.reviews__button-video')
+    let buttonSocial = document.querySelector('.reviews__button-social')
+
+    buttonVideo.addEventListener('click', function() {
+        document.querySelector('.reviews__box-social').style = 'display: none'
+        document.querySelector('.reviews__box-video').style = 'display: flex'
+    })
+    buttonSocial.addEventListener('click', function() {
+        document.querySelector('.reviews__box-social').style = 'display: flex'
+        document.querySelector('.reviews__box-video').style = 'display: none'
+    })
+    
+    /*КАРТА НА ГЛАВНОЙ*/
+    ymaps.ready(function () {
+        // Map 1
+        var myMap = new ymaps.Map('contacts__map', {
+            center: [58.644937169282855, 49.55184420632247],
+            zoom: 17
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        );
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: '610029, г. Киров, ул. Фабричная, д. 19    '
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: '<?= PATH ?>/assets/image/mapss.png',
+            iconImageSize: [90, 90],
+            iconImageOffset: [-45, -45]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom')
+        myMap.events.add('click', function(){
+            myMap.behaviors.enable('scrollZoom')
+        })
+
+        // Map 2
+        var myMap2 = new ymaps.Map('lot-work__map', {
+            center: [58.644937169282855, 49.55184420632247],
+            zoom: 17
+        }); 
+    });   
+    // var myMap2 = new ymaps.Map('lot-work__map', {
+    //     center: center,
+    //     zoom: 10
+    // }); 
+
+    // ymaps.ready(function () {
+    // var myMap = new ymaps.Map('lot-work__map', {
+    //     center: [58.644937169282855, 49.55184420632247],
+    //     zoom: 17
+    // }, {
+    //     searchControlProvider: 'yandex#search'
+    // }),
+    // MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+    //     '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    // );
+    // myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+    //     hintContent: '610029, г. Киров, ул. Фабричная, д. 19    '
+    // }, {
+    //     iconLayout: 'default#image',
+    //     iconImageHref: '<?= PATH ?>/assets/image/mapss.png',
+    //     iconImageSize: [90, 90],
+    //     iconImageOffset: [-45, -45]
+    // });
+    // myMap.geoObjects.add(myPlacemark);
+    // myMap.behaviors.disable('scrollZoom')
+    // myMap.events.add('click', function(){
+    // myMap.behaviors.enable('scrollZoom')
+    // })
+    // });   
+</script>
+

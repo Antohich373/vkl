@@ -193,8 +193,8 @@
                     </form>
                 </div>
             </div>
-            <div class="contact__map">
-                <img src="assets/images/contact/map.png" alt="">
+            <div class="contact__map" id="contact__map">
+                
                 <p class="contacts__adress">
                     Адрес офиса:<br>
                     Луганская 49
@@ -367,3 +367,34 @@
 <script src="assets/app.min.js"></script>
 </body>
 </html>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=e1d12f77-c3d9-40bc-bcd0-ac6e558860db&lang=ru_RU"></script>
+<script>
+    ymaps.ready(function () {
+        // Map 1
+        var myMap = new ymaps.Map('contact__map', {
+            center: [58.644937169282855, 49.55184420632247],
+            zoom: 17
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        );
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: '610029, г. Киров, ул. Фабричная, д. 19    '
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: '<?= PATH ?>/assets/image/mapss.png',
+            iconImageSize: [90, 90],
+            iconImageOffset: [-45, -45]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom')
+        myMap.events.add('click', function(){
+            myMap.behaviors.enable('scrollZoom')
+        })
+    });   
+</script>
